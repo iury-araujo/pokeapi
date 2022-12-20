@@ -1,0 +1,63 @@
+.main-container{
+  font-family: Arial, Helvetica, sans-serif;
+
+  &__elements{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+    margin-top: 70px;
+    .pokemon-item{
+      background-color: #d3d2d2;
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      box-shadow: #000 3px 3px 30px;
+
+      &__name{
+        text-align: center;
+        margin-top: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+
+      &__image{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      &__specifications{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: 400;
+        margin-top: -5px;
+
+        &-type,
+        &-abilities{
+          justify-content: flex-start;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          align-items: center;
+
+          &-title{
+            font-size: 16px;
+          }
+        }
+
+        &-type{
+
+        }      
+
+        &-abilities{
+
+        }
+      }
+    }
+  }
+}
